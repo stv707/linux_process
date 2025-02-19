@@ -9,7 +9,7 @@ First, ensure that the compiled `myapp` binary is placed in `/usr/local/bin` for
 sudo mv myapp /usr/local/bin/
 ```
 
-## Step 1a 
+## Step 1a : Label myapp with bin_t SELinux 
 ### SELinux prevention - Due to SELinux, the process may not run
 ```sh 
 chcon -t bin_t /usr/local/bin/myapp
