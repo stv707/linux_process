@@ -18,8 +18,8 @@ sudo dnf install -y gcc git
 Clone the GitHub repository containing the `myapp.c` file:
 
 ```sh
-git clone <your-github-repo-url>
-cd <your-repo-name>
+git clone https://github.com/stv707/linux_process.git
+cd linux_process
 ```
 
 ## Step 3: Compile the Program
