@@ -71,6 +71,7 @@ kill -15 <parent_pid>
 Expected Behavior:
 - The parent process will terminate.
 - It will also terminate all child processes before exiting.
+- **Restart the myappp to perform next step**
 
 ### Kill the Parent Process Using SIGKILL (`kill -9`)
 Forcefully terminate the parent process:
