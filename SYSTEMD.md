@@ -9,6 +9,17 @@ First, ensure that the compiled `myapp` binary is placed in `/usr/local/bin` for
 sudo mv myapp /usr/local/bin/
 ```
 
+## Step 1a 
+### SELinux prevention - Due to SELinux, the process may not run
+```sh 
+chcon -t bin_t /usr/local/bin/myapp
+
+sudo restorecon -v /usr/local/bin/myapp
+sudo restorecon -Rv /usr/local/bin
+
+```
+
+
 ## Step 2: Create a systemd Unit File
 Create a new systemd service unit file in `/etc/systemd/system/`:
 
